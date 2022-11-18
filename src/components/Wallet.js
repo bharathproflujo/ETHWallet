@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { StyleSheet, TextInput, } from 'react-native';
 import { ethers } from 'ethers';
 
-const INFURA_API_URL = 'https://eth-goerli.g.alchemy.com/v2/bRcj-i-w9MfyDJObmalXA817e1N58fWr'; // Decalaring node API
-const WALLET_ADDRESS = '0xf1509703333e0AB155F5d55ad773f93a91422B41'; // Decalaring Wallet address
-const WALLET_PRIVATE_KEY = '6054ac87f700e3f3b680ed7ca8c0c6ffc0db90499f82e8869aabb525b4797fd6'; // Decalaring wallet's private key
+const INFURA_API_URL = 'https://eth-goerli.g.alchemy.com/v2/bRcj-i-w9MfyDJObmalXA817e1N58fWr'; // Declaring node API
+const WALLET_ADDRESS = '0xf1509703333e0AB155F5d55ad773f93a91422B41'; // Declaring Wallet address
+const WALLET_PRIVATE_KEY = '6054ac87f700e3f3b680ed7ca8c0c6ffc0db90499f82e8869aabb525b4797fd6'; // Declaring wallet's private key
 
 export default function userBalance() {
 
@@ -59,7 +59,7 @@ export default function userBalance() {
                 // checking if the sender have enough balance
                 if (userDetails.balance >= tokensToSend) {
 
-                    // passing private as parameter in Wallet()
+                    // passing private key as parameter in Wallet()
                     let wallet = new ethers.Wallet(WALLET_PRIVATE_KEY);
 
                     // assigning signer for safe transaction using connect()
