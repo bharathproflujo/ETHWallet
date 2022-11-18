@@ -15,6 +15,10 @@ to run locally
 
 `npm start web` 
 
+# Referred documents
+
+https://docs.etherscan.io/tutorials/signing-raw-transactions
+
 ## Get Testnet Tokens
 https://goerlifaucet.com
 

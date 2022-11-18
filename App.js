@@ -1,20 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ImageBackground, StyleSheet } from 'react-native';
 import Wallet from './src/components/Wallet'
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ImageBackground source={require('./assets/ethereum1.jpg')} style={styles.container}>
       <Wallet></Wallet>
       <StatusBar style="auto" />
-    </View>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
